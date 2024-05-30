@@ -9,4 +9,4 @@ Jalankan `ng serve` untuk memulai server pengembangan. Navigasikan ke `http://lo
 Jalankan ng build untuk membangun (build) proyek. Artefak hasil build akan disimpan di direktori dist/.
 
 ## link backend
-[link to backend express] (https://github.com/bima31/HW_BE_express.git)
+[link to backend express](https://github.com/bima31/HW_BE_express.git)
