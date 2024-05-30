@@ -1,0 +1,20 @@
+/* app.component.scss */
+nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+router-outlet {
+  display: block;
+  margin-top: 2rem;
+}

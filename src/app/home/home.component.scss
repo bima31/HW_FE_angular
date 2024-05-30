@@ -1,0 +1,130 @@
+// src/app/home/home.component.scss
+
+// Variables for colors and other constants
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$table-border-color: #dee2e6;
+$hover-color: #f1f1f1;
+
+// Global styles for modern look
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 1rem;
+}
+
+// Container for table
+.table-container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.div-buttons {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    margin: 0 5px;
+  }
+}
+// Input styles
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid $table-border-color;
+  border-radius: 5px;
+}
+
+// Table styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid $table-border-color;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: $primary-color;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: $background-color;
+}
+
+tr:hover td {
+  background-color: $hover-color;
+}
+
+// Button styles
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: $secondary-color;
+  color: white;
+}
+
+// Specific button styles
+button:first-of-type {
+  background-color: $primary-color;
+  color: white;
+}
+
+button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+// Pagination styles
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid $table-border-color;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination li.active {
+  background-color: $primary-color;
+  color: white;
+}
+
+.pagination li:hover:not(.active) {
+  background-color: $hover-color;
+}

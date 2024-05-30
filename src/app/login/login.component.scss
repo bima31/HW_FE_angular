@@ -1,0 +1,40 @@
+$color_1: white;
+$background-color_1: #007bff;
+$background-color_2: #0056b3;
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  div {
+    margin-bottom: 1em;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    padding: 0.5em;
+    background-color: $background-color_1;
+    border: none;
+    color: $color_1;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: $background-color_2;
+    }
+  }
+}

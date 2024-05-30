@@ -1,0 +1,31 @@
+<div class="table-container">
+  <div class="div-buttons" >
+    <button (click)="openAddDataDialog()">Tambah</button>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <input type="text" [(ngModel)]="filterText" (input)="onFilterChange()" placeholder="Filter by product name">
+  <table>
+    <thead>
+    <tr>
+      <th>Nama Produk</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of paginatedData">
+      <td>{{ item.nama_product }}</td>
+      <td>{{ item.qty_product }}</td>
+      <td>
+        <button (click)="openEditDialog(item)">Edit</button>
+        <button (click)="deleteItem(item)">Hapus</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <ul class="pagination">
+    <li *ngFor="let page of totalPages()" (click)="onPageChange(page)" [class.active]="currentPage === page">
+      <a>{{ page }}</a>
+    </li>
+  </ul>
+</div>

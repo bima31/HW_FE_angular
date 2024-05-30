@@ -1,0 +1,13 @@
+<div class="add-data-dialog-container">
+  <h2>Add New Data</h2>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="newData.nama_product" />
+  </div>
+  <div>
+    <label for="qty">Quantity:</label>
+    <input type="number" id="qty" [(ngModel)]="newData.qty_product" />
+  </div>
+  <button (click)="addData()">Tambah</button>
+  <button (click)="closeDialog()">Cancel</button>
+</div>
